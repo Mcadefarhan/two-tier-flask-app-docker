@@ -184,15 +184,6 @@ SELECT * FROM messages;
 
 ---
 
-## Known Issues / To-Do
-
-- [x] **Filename mismatch fixed:** `requirements.txt` is now correctly named to match the `Dockerfile`'s `COPY requirements.txt .` instruction.
-- [x] **Dependency version conflict fixed:** `requirements.txt` now pins `Flask==2.0.1` with the matching `Werkzeug==2.0.1`, avoiding import errors.
-- [x] **Filename typo fixed:** `messgae.sql` renamed to `message.sql`.
-- [ ] Move hardcoded credentials (`root`/`root`) to a `.env` file or secrets manager before any production use.
-
----
-
 ## Future Enhancements
 
 - [ ] Add Kubernetes manifests (Deployment, Service, ConfigMap, Secret) under `k8s/`
